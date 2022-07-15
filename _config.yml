@@ -104,9 +104,9 @@ comments:
 
   giscus:
     repo:     sherlcok314159/sherlcok314159.github.io
-    repo_id:  R_kgDOHhpZHg
+    repo_id:  R_kgDOHhmPLQ
     category: Announcements
-    category_id: DIC_kwDOHhpZHs4CPwiJ
+    category_id: DIC_kwDOHhmPLc4CQOwD
     mapping:          # optional, default to 'pathname'
     input_position:   # optional, default to 'bottom'
     lang:       
