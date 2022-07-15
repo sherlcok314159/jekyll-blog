@@ -12,8 +12,8 @@ image:
 ---
 
 ## Problems To Solve
-1. To <b>Scale Down</b> the model size while maintaining the performances
-2. To incorporate `External Memory Retrieval` in the Large Language Model Modelling
+1. To <b>Scale Down</b> the model size while maintaining the performances.
+2. To incorporate `External Memory Retrieval` in the Large Language Model Modelling.
 
 ![](2022/06/19/ecSmGwTuBbzYnDX.png)
 
