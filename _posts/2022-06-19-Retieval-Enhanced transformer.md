@@ -13,7 +13,7 @@ image:
 
 ## Problems To Solve
 1. To <b>Scale Down</b> the model size while maintaining the performances.
-2. To incorporate `External Memory Retrieval` in the Large Language Model Modelling.
+2. To incorporate `External Memory Retrieval` in the Large Language Model Modeling.
 
 ![](2022/06/19/ecSmGwTuBbzYnDX.png)
 
@@ -29,7 +29,7 @@ image:
 2. `Test set` leakage:
 	Due to the huge retrieving database, the test set may have appeared in the training set. Thus, the authors apply `13-gram Jaccard Similarity` between the training and test documents to *filter* those training documents similar to the test documents (i.e., the similarity is $\geq \textbf{0.80}$)
 
-### Retrieval Modelling
+### Retrieval Modeling
 1. `Key-Value` Format of the Database: 
 	1. $\text{Key} \Rightarrow$ `frozen` BERT Embedding
 	2. $\text{Value} \Rightarrow$ raw `chunks` of the tokens
