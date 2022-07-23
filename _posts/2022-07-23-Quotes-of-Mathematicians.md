@@ -1,6 +1,6 @@
 ---
 title: Quotes of Mathematicians
-date: 2022-07-23 09:55:00 +0800
+date: 2022-07-23 09:56:00 +0800
 categories: [Quotes]
 tags: [Mathematics]
 math: false
