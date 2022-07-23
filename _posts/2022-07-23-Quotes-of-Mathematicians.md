@@ -11,6 +11,7 @@ image:
   height: 100
 ---
 
+0. Life is complex, and it has both real and imaginary parts. — Someone
 1. To not know maths is a severe limitation to understanding the world. — Richard Feynman
 2. Problems worthy of attack prove their worth by fighting back. — Piet Hein
 3. An expert is a person who has made all the mistakes that can be made in a very narrow field. — Niels Bohr
