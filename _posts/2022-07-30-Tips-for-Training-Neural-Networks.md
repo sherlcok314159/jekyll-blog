@@ -14,7 +14,7 @@ Recently, I have read a [blog](http://karpathy.github.io/2019/04/25/recipe/) abo
 
 Nowadays, it seems like that training NN is extremely easy for there are plenty of free `frameworks` which are simple to use (e.g. PyTorch, Numpy, Tensorflow). Well, training NN is easy when you are `copying` others' work (e.g. reproducing a BERT) because everything is there for you. However, when designing a NN or facing a new task, you are most probably trapped somewhere. 
 
-And this blog is meant to guide you to handle new problems.
+And this blog is meant to guide you to handle new problems. Hope you enjoy it!
 
 Let's first begin with some basic rules. 
 
