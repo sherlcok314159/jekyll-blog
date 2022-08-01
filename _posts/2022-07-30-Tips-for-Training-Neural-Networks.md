@@ -14,14 +14,15 @@ Recently, I have read a [blog](http://karpathy.github.io/2019/04/25/recipe/) abo
 
 Nowadays, it seems like that training NN is extremely easy for there are plenty of free `frameworks` which are simple to use (e.g. PyTorch, Numpy, Tensorflow). Well, training NN is easy when you are `copying` others' work (e.g. reproducing a BERT) because everything is there for you. However, when designing a NN or facing a new task, you are most probably trapped somewhere. 
 
-And this blog is meant to guide you to handle new problems. Hope you enjoy it!
+And this blog is meant to guide you to handle new problems.
 
-Let's first begin with some basic rules. 
+Let's first begin with some basic rules. Hope you guys enjoy it!
 
 1. <b>Rush into training neural networks leads to suffering.</b> Training NN is not like writing the common code. For instance, if you plug in a int while it needs a string, errors just come out. However, writing the code about NN can not be so easy for it won't show you bugs `automatically` (only if you make big mistakes). 
 2. <b>Sweating the details always pays off.</b> Someone may say the details are `infinite` and can stop you from marching. Note that the details mentioned here are all necessary instead of some `trivialities`. And sweating the details can reduce your pain. 
-3. <b>Observation leads to intuition. </b> Sadly, if you just keep thinking about something, inspiration will never come to you. For instance, if you want to upgrade the algorithm, you had better observe the data where the algorithm fails instead of just thinking about the algorithm, 
+3. <b>Observation leads to intuition. </b> Sadly, if you just keep thinking about something, inspiration will never come to you. For instance, if you want to upgrade the algorithm, you had better observe the data where the algorithm fails instead of just thinking about the algorithm.
 4. <b>Trusting your intuition instead of your implementation. </b> Sometimes when you come up with a new idea, the implementation of it may go wrong to some degree. When the result is `opposite` to your `assumption`, always check your code first before doubting your idea.
+5. <b>Quicker, then better.</b> When you are trying to test your hypothesis, use the most `efficient` way to verify it as `fast` as possible.
 
 Then let us go through concrete parts.
 
