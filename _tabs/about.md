@@ -8,9 +8,12 @@ order: 4
 
 # Hi!
 
+> CV IS [HERE](https://drive.google.com/file/d/1ZFe4ZL1FHW7UGC_Lxmqo8sLYAZURUMja/view?usp=sharing).
+{: .prompt-tip }
+
 Here is Yunpeng Tai. I am a geek about mathematics, machine learning and NLP. 
 
-I am a sophomore studying Computer Science in Suzhou University of Science and Technology. I am focusing on the <b>Open-Domained QA, Machine Reading Comprehension</b> and the features of the Large Pre-trained Language Models. However, if time permitted, any interesting topic can be my research area.
+I am a junior Computer Science student in Suzhou University of Science and Technology. I am focusing on the <b>Open-Domained QA, Machine Reading Comprehension</b> and the features of the Large Pre-trained Language Models. However, if time permitted, any interesting topic can be my research area.
 
 I’m currently trying to get a PhD offer from ML or NLP. Therefore, I am going to use this academic blog to record my thoughts. Also, I have been trying really hard to make the knowledge easy to grasp. Possible visualization or examples can be used to explain some topic.
 
