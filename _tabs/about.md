@@ -8,7 +8,7 @@ order: 4
 
 # Hi!
 
-> You can check my CV [here](https://drive.google.com/file/d/1ZFe4ZL1FHW7UGC_Lxmqo8sLYAZURUMja/view?usp=sharing).  :blush: 
+> You can check my CV [here](https://drive.google.com/file/d/1ZFe4ZL1FHW7UGC_Lxmqo8sLYAZURUMja/view?usp=sharing).
 {: .prompt-tip }
 
 Here is Yunpeng Tai. I am a geek about mathematics, machine learning and NLP. 
