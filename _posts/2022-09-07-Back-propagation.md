@@ -117,7 +117,7 @@ $\text{Remark.}$ $z_j$ can send information to all the output neurons (e.g., $y_
 Substituting $\text{(4.11)}$ into $\text{(4.10)}$ we obtain
 
 $$
-\frac{\partial E(w)}{\partial w_{ji}^{(1)}} = (1 - z_j^2)x_{i} \sum\limits_{k} (y_{k}- \hat{y}_{k)} w_{kj}^{(2)} \tag{4.12}
+\frac{\partial E(w)}{\partial w_{ji}^{(1)}} = (1 - z_j^2)x_{i} \sum\limits_{k} (y_{k}- \hat{y}_{k}) w_{kj}^{(2)} \tag{4.12}
 $$
 
 ### 5. Interpretation
