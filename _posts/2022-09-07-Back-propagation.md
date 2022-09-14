@@ -50,7 +50,7 @@ $$
 
 ### 4. Case Study
 
-![backprop2.png](2022/09/07/iTFg9de8RyfJavm.png){: w="400" h="700" }
+![backprop2.png](2022/09/07/iTFg9de8RyfJavm.png){: w="300" h="600" }
 
 Let's first see an important example. In fully connected layers, one input neuron sends information (i.e., multiplied by weights) to every output neuron. Denote $w_{ji}$ as the weight from $x_i$ to $y_j$. Then for every output neuron (e.g., $y_j$), it accepts the information sent by every input neuron:
 
@@ -66,7 +66,7 @@ $$
 
 Let's see another example. It is represented by the computational graph below.
 
-![backprop1.png](2022/09/07/QOJYtIw6BNmsc2i.png){: w="400" h="700" }
+![backprop1.png](2022/09/07/QOJYtIw6BNmsc2i.png){: w="300" h="600" }
 
 And we can perform a forward propagation according to the computational graph.
 
