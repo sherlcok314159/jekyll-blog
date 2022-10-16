@@ -15,16 +15,18 @@ image:
 Gradient-based methods make use of the gradient information to adjust the parameters. Among them, gradient descent can be the simplest. Gradient descent makes the parameters to walk a small step in the direction of the negative gradient.
 
 $$
-\mathbf{w}^{\tau + 1} = \mathbf{w}^{\tau} - \eta \nabla_{\mathbf{w}^{\tau}} E \tag{1.1}
+\boldsymbol{w}^{\tau + 1} = \boldsymbol{w}^{\tau} - \eta \nabla_{\boldsymbol{w}^{\tau}} E \tag{1.1}
 $$
 
 where $\eta, \tau, E$ label learning rate ($\eta > 0$), the iteration step and the loss function. Wait! But why is the negative gradient? Recall the calculus basics
+
 $$
 \begin{align}
-\nabla_{\mathbf{w^{\tau}}}E > 0 \implies E \uparrow \tag {1.2}\\
-\nabla_{\mathbf{w^{\tau}}}E < 0 \implies E \downarrow \tag{1.3}
+\nabla_{\boldsymbol{w^{\tau}}}E > 0 \implies E \uparrow \tag {1.2}\\
+\nabla_{\boldsymbol{w^{\tau}}}E < 0 \implies E \downarrow \tag{1.3}
 \end{align}
 $$
+
 Take $\displaystyle y=\frac{1}{2}x^2$ as an example, when $f'(x) < 0$, we can find the function is decreasing. When added by the gradient, $x$ should decrease which is opposite to our desire. Thus, we want to add the negative gradient to $x$. 
 
 ![backprop0.png](2022/09/07/3lhCmiytvPuWnRk.png){: w="600" h="900" }
@@ -93,23 +95,23 @@ $$
 The error function can be mean squared errors:
 
 $$
-E(w) = \frac{1}{2} \sum\limits_{k}(y_{k}- \hat{y}_k)^2 \tag{4.8}            
+E(\boldsymbol{w}) = \frac{1}{2} \sum\limits_{k}(y_{k}- \hat{y}_k)^2 \tag{4.8}            
 $$
 
-If we want to update the parameters, we need first to compute the partial derivative of $E(w)$ with respect to them. 
+If we want to update the parameters, we need first to compute the partial derivative of $E(\boldsymbol{w})$ with respect to them. 
 
 $$
-\frac{\partial E(w)}{\partial w_{kj}^{(2)}} = \frac{\partial E(w)}{\partial y_{k}} \frac{\partial y_k}{\partial w_{kj}^{(2)}} = (y_{k}- \hat{y}_k)z_{j} \tag{4.9}
+\frac{\partial E(\boldsymbol{w})}{\partial w_{kj}^{(2)}} = \frac{\partial E(\boldsymbol{w})}{\partial y_{k}} \frac{\partial y_k}{\partial w_{kj}^{(2)}} = (y_{k}- \hat{y}_k)z_{j} \tag{4.9}
 $$
 
 $$
 \begin{align}
-\frac{\partial E(w)}{\partial w_{ji}^{(1)}} &= \frac{\partial E(w)}{\partial h_{j}}\frac{\partial h_j}{\partial w_{ji}^{(1)}} = (\frac{\partial E(w)}{\partial z_{j}} \frac{\partial z_j}{\partial h_j})x_{i} \tag{4.10} \\
+\frac{\partial E(\boldsymbol{w})}{\partial w_{ji}^{(1)}} &= \frac{\partial E(\boldsymbol{w})}{\partial h_{j}}\frac{\partial h_j}{\partial w_{ji}^{(1)}} = (\frac{\partial E(\boldsymbol{w})}{\partial z_{j}} \frac{\partial z_j}{\partial h_j})x_{i} \tag{4.10} \\
 \end{align}
 $$
 
 $$
-\frac{\partial E(w)}{\partial z_j} = \sum\limits_{k}\frac{\partial E(w)}{\partial y_{k}}\frac{\partial y_k}{\partial z_{j}}= \sum\limits_{k} (y_{k}- \hat{y}_{k}) w_{kj}^{(2)}\tag{4.11}
+\frac{\partial E(\boldsymbol{w})}{\partial z_j} = \sum\limits_{k}\frac{\partial E(\boldsymbol{w})}{\partial y_{k}}\frac{\partial y_k}{\partial z_{j}}= \sum\limits_{k} (y_{k}- \hat{y}_{k}) w_{kj}^{(2)}\tag{4.11}
 $$
 
 $\text{Remark.}$ $z_j$ can send information to all the output neurons (e.g., $y_k$), thus we need to sum over all the derivatives with respect to $z_j$.
@@ -117,32 +119,32 @@ $\text{Remark.}$ $z_j$ can send information to all the output neurons (e.g., $y_
 Substituting $\text{(4.11)}$ into $\text{(4.10)}$ we obtain
 
 $$
-\frac{\partial E(w)}{\partial w_{ji}^{(1)}} = (1 - z_j^2)x_{i} \sum\limits_{k} (y_{k}- \hat{y}_{k}) w_{kj}^{(2)} \tag{4.12}
+\frac{\partial E(\boldsymbol{w})}{\partial w_{ji}^{(1)}} = (1 - z_j^2)x_{i} \sum\limits_{k} (y_{k}- \hat{y}_{k}) w_{kj}^{(2)} \tag{4.12}
 $$
 
 ### 5. Interpretation
 
-Recall the Taylor approximation
+Recall the Taylor approximation of the two variables function:
 
 $$
-f(x) \approx f(x_{0}) + f'(x_{0})(x-x_{0}) \tag{5.1}
+f(x, y) = f(x_0, y_0) + f_x (x- x_0) + f_y(y-y_0) \tag{5.1}
 $$
 
-$\text{Remark.}$ $x_0$ needs to be close to $x$, otherwise the approximation can fail.
+$\text{Remark.}$ $(x, y)$ needs to be close to $(x_0, y_0)$, otherwise the approximation can fail.
 
 We can transform $\text{(5.1)}$ into $\text{(5.3)}$:
 
 $$
 \begin{align}
-f(x) - f(x_{0}) &= f'(x_{0})(x-x_{0}) \tag{5.2}\\
-\implies \Delta f &= f'(x_{0}) \Delta x \tag{5.3}
+f(x,y) - f(x_{0},y_0) &= f_x (x- x_0) + f_y(y-y_0) \tag{5.2}\\
+\implies \Delta f &= f_x \Delta x  + f_y \Delta y\tag{5.3}
 \end{align}
 $$
 
 If we apply $\text{(5.3)}$ in the example above, we can obtain
 
 $$
-\Delta E(w) =  (\nabla_{w_{ji}^{(1)}}E(w)) \Delta w_{ji}^{(1)} = \frac{\partial E(w)}{\partial w_{ji}^{(1)}} \Delta w_{ji}^{(1)} \tag{5.4}
+\Delta E(\boldsymbol{w}) = \nabla_{\boldsymbol{w}}E(\boldsymbol{w}) \Delta \boldsymbol{w} \tag{5.4}
 $$
 
 From another perspective, a small change in the parameters will propagate into a small change in object function by getting multiplied by the gradient.
