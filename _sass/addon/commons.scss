@@ -37,8 +37,6 @@ body {
   line-height: 1.75rem;
   background: var(--body-bg);
   color: var(--text-color);
-  font-size: 30px;
-  font-display: auto;
   font-family: 'PlayFair', 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
 }
 
@@ -1047,7 +1045,7 @@ $sidebar-display: "sidebar-display";
   display: none;
   font-size: 1.1rem;
   font-weight: 600;
-  font-family: sans-serif;
+  font-family: 'PlayFair';
   color: var(--topbar-text-color);
   text-align: center;
   width: 70%;
@@ -1152,7 +1150,7 @@ $sidebar-display: "sidebar-display";
   }
 
   .toast-body {
-    font-family: 'Lato';
+    font-family: 'PlayFair';
     line-height: 1.25rem;
 
     button {
