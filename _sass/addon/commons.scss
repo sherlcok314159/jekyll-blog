@@ -2,6 +2,11 @@
   The common styles
 */
 
+@font-face {
+  font-family: "PlayFair";
+  src: url("/assets/fonts/PlayfairDisplay-Regular.ttf");
+}
+
 html {
   @media (prefers-color-scheme: light) {
     &:not([data-mode]),
@@ -32,8 +37,9 @@ body {
   line-height: 1.75rem;
   background: var(--body-bg);
   color: var(--text-color);
-  -webkit-font-smoothing: antialiased;
-  font-family: 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
+  font-size: medium;
+  font-display: auto;
+  font-family: 'PlayFair', 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
 }
 
 /* --- Typography --- */
