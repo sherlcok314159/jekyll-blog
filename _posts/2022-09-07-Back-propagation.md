@@ -27,7 +27,7 @@ Wait! But why is the negative gradient?
 > The function increases the most sharply by following the direction of the gradient.
 {: .prompt-info}
 
-The below is an example. The three-dimensional plane is $z = F(x, y)$. The black point is on the plane. You can try to move the point to see how the arrow changes. Interestingly, the arrow always points to the direction which leads to the **biggest** increase of the function value.  Note that when you move one step, the gradient just changes. Thus if you still want to increase the function value in the most sharp way, another computation is needed.
+The below is an example. The three-dimensional plane is $z = F(x, y)$. The black point is on the plane. You can try to move the point to see how the arrow changes. Interestingly, the arrow always points to the direction which leads to the `biggest` increase of the function value.  Note that when you move one step, the gradient just changes. Thus if you still want to increase the function value in the most sharp way, another computation is needed.
 
 > The starting point of the arrow is the mapping of the black point to the $xoy$ plane. The arrow is parallel to the gradient.
 {: .prompt-tip}
@@ -39,7 +39,7 @@ Let us use another graph to better understand what the mapping means. The left g
 
 <iframe scrolling="no" title="Directional derivatives and Gradient" src="https://www.geogebra.org/material/iframe/id/vpt37qtt/width/788/height/520/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" width="788px" height="520px" style="border:0px;"> </iframe>
 
-That is the **intuitive** way to feel about the gradient. Furthermore, we can just try to prove it[^1].
+That is the `intuitive` way to feel about the gradient. Furthermore, we can just try to prove it[^1].
 
 Consider a Taylor Expansion:
 
@@ -50,7 +50,7 @@ F(\boldsymbol{r_0} + \boldsymbol{r}) &= F(\boldsymbol{r_0}) + \nabla_{r_0}F \cdo
 \end{aligned}\tag{2.1}
 $$
 
-When you decide to move a small step, the two magnitudes are certain. If $\theta=0$, you can maximize the function value (i.e. **in the direction of the gradient**).
+When you decide to move a small step, the two magnitudes are certain. If $\theta=0$, you can maximize the function value (i.e. `in the direction of the gradient`).
 
 Thus if we want to minimize our loss function, we need to go in the opposite direction of the gradient. That is why we need a negative gradient. Also, note that Taylor Expansion only applies to small $\Delta x$ which further requires $\eta$ to be small (e.g. $2 \times 10^{-5}, 5 \times 10^{-5}$).
 
@@ -63,7 +63,7 @@ But how to compute the gradient needs a powerful technique: back-propagation.
 
 Back-propagation can be new to the novices, but it does exist in the life widely. For instance, the loss can be your teacher's attitude towards you. If you fail in one examination, your teacher can be disappointed with you. Then, he can tell your parents about your failure. Your parents then ask you to work harder to win the examination.
 
-Your parents can be seen as **hidden units** in the neural network, and you are the parameter of the network. Your teacher's bad attitude towards your failure can ask you to make adjustments: working harder. Similarly, the loss can require the parameters to make adjustments via gradients.
+Your parents can be seen as `hidden units` in the neural network, and you are the parameter of the network. Your teacher's bad attitude towards your failure can ask you to make adjustments: working harder. Similarly, the loss can require the parameters to make adjustments via gradients.
 
 ### 4. Chain Rule
 
