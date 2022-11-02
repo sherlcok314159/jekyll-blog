@@ -1,5 +1,5 @@
 ---
-title: Introduction to Back-propagation 
+title: Going Deeper into Back-propagation 
 date: 2022-09-07 11:10:00 +0800
 categories: [Training, Deep Learning]
 tags: [Gradients, Optimization]
