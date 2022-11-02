@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "PlayFair";
-  src: url("/assets/fonts/PlayfairDisplay-Bold.ttf");
+  src: url("/assets/fonts/PlayfairDisplay-Regular.ttf");
 }
 
 html {
@@ -37,7 +37,7 @@ body {
   line-height: 1.75rem;
   background: var(--body-bg);
   color: var(--text-color);
-  font-size: medium;
+  font-size: 30px;
   font-display: auto;
   font-family: 'PlayFair', 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
 }
