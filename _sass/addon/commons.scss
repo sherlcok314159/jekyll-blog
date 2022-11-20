@@ -7,6 +7,11 @@
   src: url("/assets/fonts/PlayfairDisplay-Regular.ttf");
 }
 
+@font-face {
+  font-family: "xiawu";
+  src: url("/assets/fonts/LXGWWenKaiScreenR.ttf");
+}
+
 html {
   @media (prefers-color-scheme: light) {
     &:not([data-mode]),
@@ -37,7 +42,7 @@ body {
   background: var(--body-bg);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
-  font-family: "PlayFair", "Source Sans Pro", "Microsoft Yahei", sans-serif;
+  font-family: "PlayFair", "xiawu", "Source Sans Pro", "Microsoft Yahei", sans-serif;
   line-height: 1.75;
 }
 
@@ -1053,7 +1058,7 @@ $sidebar-display: "sidebar-display";
   display: none;
   font-size: 1.1rem;
   font-weight: 600;
-  font-family: 'PlayFair';
+  font-family: 'PlayFair', 'xiawu';
   color: var(--topbar-text-color);
   text-align: center;
   width: 70%;
@@ -1158,7 +1163,7 @@ $sidebar-display: "sidebar-display";
   }
 
   .toast-body {
-    font-family: 'PlayFair';
+    font-family: 'PlayFair', 'xiawu';
     line-height: 1.25rem;
 
     button {
