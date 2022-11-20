@@ -34,11 +34,19 @@ html {
 }
 
 body {
-  line-height: 1.75rem;
   background: var(--body-bg);
   color: var(--text-color);
-  font-family: 'PlayFair', 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-family: "PlayFair", "Source Sans Pro", "Microsoft Yahei", sans-serif;
+  line-height: 1.75;
 }
+
+// body {
+//   line-height: 1.75rem;
+//   background: var(--body-bg);
+//   color: var(--text-color);
+//   font-family: 'PlayFair', 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
+// }
 
 /* --- Typography --- */
 

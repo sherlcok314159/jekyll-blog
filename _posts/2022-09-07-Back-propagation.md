@@ -33,7 +33,8 @@ The below is an example. The three-dimensional plane is $z = F(x, y)$. The black
 {: .prompt-tip}
 
 
-<iframe scrolling="no" title="Directional derivatives and Gradient" src="https://www.geogebra.org/material/iframe/id/wd5mrudh/width/800/height/600/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/false/ld/false/sri/false/at/auto" width="800px" height="590px" style="border:0px;"> </iframe>
+<iframe scrolling="no" title="Directional derivatives and Gradient" src="https://www.geogebra.org/material/iframe/id/wd5mrudh/width/700/height/500/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/false/ld/false/sri/false/at/auto"  width="800px" height="590px" style="border:0px;"> </iframe>
+
 
 Let us use another graph to better understand what the mapping means. The left graph is  contour plot while the right is the plane. The red point is just the mapping of the black point to $xoy$ plane. The blue arrow is just the direction of the gradient. And you can move the point to feel about it.
 
