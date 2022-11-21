@@ -150,7 +150,7 @@ True
 
 了解前面的原理后，就会明白为什么会显存不均匀。因为`GPU0`比其他GPU多了汇聚的工作，得留一些显存，而其他GPU显然是不需要的。那么，解决方案就是让其他GPU的batch size开大点，`GPU0`维持原状，即不按照默认实现的`平分数据`
 
-首先我们继承原来的DataParallel（此处参考[^5]），这里我们给定第一个GPU的bs就可以，这个是实际的bs而不是乘上梯度后的。假如你想要总的bs为64，梯度累积为2，一共2张GPU，而一张最多只能18，那么保险一点GPU0设置为14，GPU1是18，也就是说你DataLoader每个batch大小是32，`gpu0_bsz=14`
+首先我们继承原来的DataParallel（此处参考[^5]），这里我们给定第一个GPU的bs就可以，这个是实际的bs而不是乘上梯度后的。假如你想要总的bs为64，梯度累积为2，一共2张GPU，而一张最多只能18，那么保险一点`GPU0`设置为14，GPU1是18，也就是说你DataLoader每个batch大小是32，`gpu0_bsz=14`
 
 ```python
 class BalancedDataParallel(DataParallel):
