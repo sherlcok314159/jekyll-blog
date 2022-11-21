@@ -581,7 +581,7 @@ torch.distributed.launch -> torch.distributed.run / torchrun
 ```bash
 # 第一个节点启动
 python -m torch.distributed.launch \
-	--nproc_per_node=NUM_GPUS
+    --nproc_per_node=NUM_GPUS \
     --nnodes=2 \
     --node_rank=0 \
     --master_addr="192.168.1.1" \
@@ -589,7 +589,7 @@ python -m torch.distributed.launch \
 
 # 第二个节点启动
 python -m torch.distributed.launch \
-	--nproc_per_node=NUM_GPUS
+    --nproc_per_node=NUM_GPUS \
     --nnodes=2 \
     --node_rank=1 \
     --master_addr="192.168.1.1" \
@@ -604,10 +604,10 @@ python -m torch.distributed.launch \
 import torch.multiprocessing as mp
 # rank mp会自动填入
 def main(rank, arg1, ...):
-	pass
+    pass
 
 if __name__ == '__main__':
-	mp.spawn(main, nprocs=TOTAL_GPUS, args=(arg1, ...))
+    mp.spawn(main, nprocs=TOTAL_GPUS, args=(arg1, ...))
 ```
 
 这种运行的时候就跟正常的python文件一致：
