@@ -85,7 +85,7 @@ class Model(nn.Module):
     # Our model
     def __init__(self, input_size, output_size):
         super(Model, self).__init__()
-		# for convenience
+        # for convenience
         self.fc = nn.Linear(input_size, output_size)
 
     def forward(self, input):
