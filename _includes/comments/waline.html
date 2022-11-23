@@ -8,12 +8,13 @@
     };
     Waline.init({
       el: '#waline',
+      reaction: true, 
+      lang: 'en',
       serverURL: '{{ site.comments.waline.server }}',
       emoji: [
         'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/qq',
-        'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/tieba',
         'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/tw-emoji',
-        'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/bilibili',
+        'https://unpkg.com/@waline/emojis@1.1.0/bmoji',
       ],
       dark: "__waline__css__",
       locale,
