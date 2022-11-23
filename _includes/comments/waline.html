@@ -1,0 +1,31 @@
+<script src="https://cdn.jsdelivr.net/npm/@waline/client@2/dist/waline.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@waline/client@2/dist/waline.css" />
+<div id="waline"></div>
+<script>
+  $(function() {
+    const locale = {
+      placeholder: '{{ site.comments.waline.placeholder }}',
+    };
+    Waline.init({
+      el: '#waline',
+      serverURL: '{{ site.comments.waline.server }}',
+      emoji: [
+        'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/qq',
+        'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/tieba',
+        'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/tw-emoji',
+        'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/bilibili',
+      ],
+      dark: "__waline__css__",
+      locale,
+    });
+    let head = document.getElementsByTagName("head")[0];
+    let css = head.lastChild;
+    let cssContent = css.textContent.replace("__waline__css__", "");
+    let cssContentPerferredDark = "@media (prefers-color-scheme: dark){html:not([data-mode])" + cssContent + "}";
+    let cssContentSelectedDark = "html[data-mode=dark]" + cssContent;
+    css.textContent = cssContentPerferredDark;
+    let style = document.createElement('style');
+    style.textContent = cssContentSelectedDark;
+    head.appendChild(style);
+  });
+</script>

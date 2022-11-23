@@ -92,7 +92,7 @@ aliPay: https://img.shields.io/badge/-Tip%20Me%20on%20Alipay-blue?logo=alipay&lo
 toc: true
 
 comments:
-  active: 'giscus'        # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+  active: 'waline'        # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
   # The active options are as follows:
   disqus:
     shortname:    # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
@@ -100,13 +100,17 @@ comments:
   utterances:
     repo:         # <gh-username>/<repo>
     issue_term:   # < url | pathname | title | ...>
-  # Giscus options › https://giscus.app
+  waline:
+    server: https://example.yunpengtai.top/ 
+    placeholder: Got anything to say?
+    avatar: mp         
 
+  # Giscus options › https://giscus.app
   giscus:
-    repo:     sherlcok314159/sherlcok314159.github.io
-    repo_id:  R_kgDOHhmPLQ
-    category: Announcements
-    category_id: DIC_kwDOHhmPLc4CQOwD
+    repo:     
+    repo_id:  
+    category: 
+    category_id: 
     mapping:          # optional, default to 'pathname'
     input_position:   # optional, default to 'bottom'
     lang:       
