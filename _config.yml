@@ -102,7 +102,7 @@ comments:
     issue_term:   # < url | pathname | title | ...>
   waline:
     server: https://example.yunpengtai.top/ 
-    placeholder: 你的看法呢？可以匿名评论哦~ Anything to say? It can be anonymous. 
+    placeholder: 可以匿名评论哦~ QQ邮箱可自动获取头像 Anything to say? It can be anonymous. 
     avatar: mp         
 
   # Giscus options › https://giscus.app

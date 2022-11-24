@@ -5,11 +5,17 @@
   $(function() {
     const locale = {
       placeholder: '{{ site.comments.waline.placeholder }}',
+      level0: '潜水',
+      level1: '冒泡',
+      level2: '摸鱼',
+      level3: '话痨',
+      level4: '龙王',
+      level5: '话满天',
     };
     Waline.init({
       el: '#waline',
-      reaction: true, 
       lang: 'en',
+      reaction: true, 
       serverURL: '{{ site.comments.waline.server }}',
       emoji: [
         'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/qq',
