@@ -1,5 +1,5 @@
-<script src="https://cdn.jsdelivr.net/npm/@waline/client@2/dist/waline.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@waline/client@2/dist/waline.css" />
+<script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css" />
 <div id="waline"></div>
 <script>
   $(function() {
@@ -9,8 +9,8 @@
       level1: '冒泡',
       level2: '摸鱼',
       level3: '话痨',
-      level4: '龙王',
-      level5: '话满天',
+      level4: '话满天',
+      level5: '龙王',
     };
     Waline.init({
       el: '#waline',
@@ -18,8 +18,8 @@
       reaction: true, 
       serverURL: '{{ site.comments.waline.server }}',
       emoji: [
-        'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/qq',
-        'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/tw-emoji',
+        'https://unpkg.com/@waline/emojis@1.1.0/qq',
+        'https://unpkg.com/@waline/emojis@1.1.0/tw-emoji',
         'https://unpkg.com/@waline/emojis@1.1.0/bmoji',
       ],
       dark: "__waline__css__",
