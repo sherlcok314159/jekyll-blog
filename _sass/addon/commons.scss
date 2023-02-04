@@ -8,6 +8,11 @@
 }
 
 @font-face {
+  font-family: "CourNew";
+  src: url("/assets/fonts/cour.ttf");
+}
+
+@font-face {
   font-family: "xiawu";
   src: url("/assets/fonts/LXGWWenKaiScreenR.ttf");
 }
@@ -42,7 +47,7 @@ body {
   background: var(--body-bg);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
-  font-family: "PlayFair", "xiawu", "Source Sans Pro", "Microsoft Yahei", sans-serif;
+  font-family: "Source Sans Pro", "xiawu", "Microsoft Yahei", sans-serif;
   line-height: 1.75;
 }
 
@@ -660,6 +665,7 @@ $sidebar-display: "sidebar-display";
   height: 100%;
   overflow-y: auto;
   width: $sidebar-width;
+  font-family: "PlayFair";
   z-index: 99;
   background: var(--sidebar-bg);
 
