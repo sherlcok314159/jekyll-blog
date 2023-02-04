@@ -33,12 +33,12 @@ The below is an example. The three-dimensional plane is $z = F(x, y)$. The black
 {: .prompt-tip}
 
 
-<iframe scrolling="no" title="Directional derivatives and Gradient" src="https://www.geogebra.org/material/iframe/id/wd5mrudh/width/700/height/500/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/false/ld/false/sri/false/at/auto"  width="800px" height="590px" style="border:0px;"> </iframe>
+<center><iframe scrolling="no" title="Directional derivatives and Gradient" src="https://www.geogebra.org/material/iframe/id/wd5mrudh/width/700/height/500/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/false/ld/false/sri/false/at/auto"  width="600px" height="390px" style="border:0px;"> </iframe></center>
 
 
 Let us use another graph to better understand what the mapping means. The left graph is  contour plot while the right is the plane. The red point is just the mapping of the black point to $xoy$ plane. The blue arrow is just the direction of the gradient. And you can move the point to feel about it.
 
-<iframe scrolling="no" title="Directional derivatives and Gradient" src="https://www.geogebra.org/material/iframe/id/vpt37qtt/width/788/height/520/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" width="788px" height="520px" style="border:0px;"> </iframe>
+<center><iframe scrolling="no" title="Directional derivatives and Gradient" src="https://www.geogebra.org/material/iframe/id/vpt37qtt/width/788/height/520/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" width="600px" height="420px" style="border:0px;"> </iframe></center>
 
 That is the `intuitive` way to feel about the gradient. Furthermore, we can just try to prove it[^1].
 
